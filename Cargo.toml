@@ -1,0 +1,18 @@
+[package]
+name = "monerod"
+version = "0.0.1"
+edition = "2021"
+description = "monerod in Rust.  A command-line interface and SDK."
+repository = "https://github.com/ManyMath/monerod-rust"
+license = "MIT"
+
+[[bin]]
+name = "monerod"
+path = "src/main.rs"
+
+[lib]
+name = "monerod"
+path = "src/lib.rs"
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
